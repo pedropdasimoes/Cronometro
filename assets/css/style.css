@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Fixedsys Excelsior 3.01';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Fixedsys Excelsior 3.01'), url('FSEX300.woff') format('woff');
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999999;
+}
+.btnIniciar{
+    transform: rotate(-48deg);
+    top: 23.5%;
+    left: 34.5%;
+}
+.btnPausar{
+    transform: rotate(48deg);
+    top: 23.5%;
+    right: 34.5%;
+}
+.btnZerar{
+    top: 13%;
+}
+.sectionGeral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e13423;
+}
+.imgCron{
+    margin: auto;
+}
+.imgCron img{
+    width: 100%;
+}
+.divCron{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 44%;
+    border-radius: 10px;
+    width: 315px;
+    text-align: center;
+    line-height: 120px;    
+    font-family:'Fixedsys Excelsior 3.01';
+    font-weight:normal;
+    font-size:50px;
+    color: white;
+    height: 130px;
+}
