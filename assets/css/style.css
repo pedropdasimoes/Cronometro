@@ -18,31 +18,40 @@ button{
     z-index: 999999;
 }
 .btnIniciar{
-    transform: rotate(-48deg);
-    top: 23.5%;
-    left: 34.5%;
+    transform: rotate(-42deg);
+    top: 8vw;
+    left: 3vw;
 }
 .btnPausar{
-    transform: rotate(48deg);
-    top: 23.5%;
-    right: 34.5%;
+    transform: rotate(42deg);
+    top: 2.5vw;
+    right: 9vw;
 }
 .btnZerar{
-    top: 13%;
+    right: 26vw;
+    top: 0vw;
+}
+#imgZerar{
+    width: 12vw;
 }
 .sectionGeral{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
     background-color: #e13423;
 }
 .imgCron{
     margin: auto;
+    position: relative;
+    width: 40%;
+
 }
-.imgCron img{
+.imgCrono{
     width: 100%;
 }
 .divCron{
@@ -50,14 +59,56 @@ button{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 44%;
+    /* top: 44%; */
     border-radius: 10px;
-    width: 315px;
+    width: 100%;
+    top: 6%;
     text-align: center;
-    line-height: 120px;    
-    font-family:'Fixedsys Excelsior 3.01';
-    font-weight:normal;
-    font-size:50px;
+    /* line-height: 120px; */
+    font-family: 'Fixedsys Excelsior 3.01';
+    font-weight: normal;
+    font-size: 4vw;
     color: white;
-    height: 130px;
+    height: 100%;
+}
+.btnGeral img{
+    width: 8vw;
+    position: absolute;
+}
+
+
+@media screen and (max-width: 750px ){
+
+    .divCron{
+        font-size: 9vw;
+    }
+    .imgCron{
+        width: 100%;
+    }
+    .imgCrono{
+        width: 100%;
+    }
+    .btnIniciar{
+        transform: rotate(-42deg);
+        top: 20vw;
+        left: 8vw;
+    }
+    .btnPausar{
+        transform: rotate(42deg);
+        top: 9vw;
+        right: 21vw;
+    }
+    .btnZerar{
+        right: 62vw;
+        top: 2vw;
+    }
+    #imgZerar{
+        width: 25vw;
+    }
+
+    .btnGeral img{
+        width: 17vw;
+    }
+
+
 }
